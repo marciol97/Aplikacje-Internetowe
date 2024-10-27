@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Zadań</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<div class="task-container">
+    <h1>Lista Zadań</h1>
+
+
+    <input type="text" id="search" placeholder="Wyszukaj">
+
+    <ul id="task-list">
+        <li>
+            <span class = "task=text">Zrobić zakupy</span>
+            <span class = "task-deadline">Termin: 2024-10-31</span>
+            <button class="delete-task">❌</button>
+        </li>
+        <li>
+            Wyrzucić śmieci <span>Termin: 2024-11-05</span>
+            <button class="delete-task">❌</button>
+        </li>
+        <li>
+            Wyprowadzić psa <span>Termin: 2024-12-01</span>
+            <button class="delete-task">❌</button>
+        </li>
+    </ul>
+
+    <div class="task-input">
+        <input type="text" id="new-task" placeholder="Nowe zadanie">
+        <input type="datetime-local" id="task-deadline">
+        <button id="add-task">Dodaj zadanie</button>
+    </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
